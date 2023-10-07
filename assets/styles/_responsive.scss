@@ -1,0 +1,17 @@
+@media (max-width:576px){
+    .header-middle{
+     display: none;
+    }
+
+    .first{
+        display: none;
+    }
+
+    .second{
+        display:flex !important;
+    }
+    
+    #First{
+        height: 80vh;
+    }
+ }

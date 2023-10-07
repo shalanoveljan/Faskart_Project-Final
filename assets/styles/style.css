@@ -1,3 +1,17 @@
+@media (max-width: 576px) {
+  .header-middle {
+    display: none;
+  }
+  .first {
+    display: none;
+  }
+  .second {
+    display: flex !important;
+  }
+  #First {
+    height: 80vh;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +19,9 @@
 }
 
 body {
-  background-color: rgb(255, 202, 127);
+  overflow-x: hidden;
 }
 body header {
-  position: fixed;
   width: 100%;
 }
 body header .header-top {
@@ -135,6 +148,9 @@ body header .header-middle .hm-all {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+body header .header-middle .hm-all nav {
+  z-index: 1;
 }
 body header .header-middle .hm-all nav .option-list-1 {
   color: #222;
@@ -753,4 +769,229 @@ body header .header-middle .hm-all .right-menu .btn-mobile .mobile-name p {
   line-height: 1.2;
   margin: 0;
   font-weight: 400;
+}
+body .second {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #239698;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+body .second .left-side {
+  width: 50%;
+}
+body .second .left-side img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .second .left-side i {
+  color: #fff;
+  cursor: pointer;
+}
+body .second .right-side .second-icons {
+  margin-left: auto;
+  list-style: none;
+}
+body .second .right-side .second-icons a {
+  color: #fff;
+}
+body #First {
+  background-image: url(https://themes.pixelstrap.com/fastkart/assets/images/grocery/banner/1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+}
+body #First .context {
+  position: absolute;
+  bottom: 30%;
+  left: 8%;
+}
+body #First .context h6 {
+  color: #239698;
+}
+body #First .context h1 {
+  font-size: calc(22px + 28 * (100vw - 320px) / 1600);
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  margin-top: 7px;
+  width: 100%;
+}
+body #First .context h2 {
+  font-size: calc(16px + 20 * (100vw - 320px) / 1600);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+body #First .context h5 {
+  font-size: calc(15px + 3 * (100vw - 320px) / 1600);
+}
+body #First .context button {
+  background-color: #239698;
+  padding: calc(8px + 3 * (100vw - 320px) / 1600) calc(16px + 8 * (100vw - 320px) / 1600);
+  font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+}
+body #First .context button i {
+  transition: 0.5s;
+}
+body #First .context button:hover i {
+  transform: translateX(7px);
+}
+body #Second .slick-track .slick {
+  background-image: url("https://themes.pixelstrap.com/fastkart/assets/images/grocery/banner/2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 25px;
+}
+body #Second .slick-track .slick .content {
+  width: 70%;
+}
+body #Second .slick-track .slick .content h5 {
+  font-size: calc(15px + 3 * (100vw - 320px) / 1600);
+  letter-spacing: 1px;
+  font-weight: 300 !important;
+}
+body #Second .slick-track .slick .content h4 {
+  font-size: calc(16px + 6 * (100vw - 320px) / 1600);
+  line-height: 1.4;
+}
+body #Second .slick-track .slick .content button {
+  color: #239698;
+  font-size: 15px;
+}
+body #category-section-3 {
+  padding: 30px 0;
+}
+body #category-section-3 .all-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+body #category-section-3 .all-product .product {
+  width: 15%;
+  background-color: #f1f1f3;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+body #category-section-3 .all-product .product .product-name h4 {
+  font-size: calc(17px + 1 * (100vw - 320px) / 1600);
+  line-height: 1.2;
+  transition: 0.4s;
+}
+body #category-section-3 .all-product .product .product-name h6 {
+  margin-top: 5px;
+  color: #4a5568;
+  font-size: calc(13px + 1 * (100vw - 320px) / 1600);
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+body #category-section-3 .all-product .product .product-image img {
+  width: 100%;
+}
+body #category-section-3 .all-product .product button {
+  position: absolute;
+  left: 35px;
+  transform: translateY(25px);
+  background-color: #239698;
+  border: 1px solid #239698;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+body #category-section-3 .all-product .product:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 150, 152, 0.15);
+  border-radius: 12px;
+  opacity: 1;
+}
+body #category-section-3 .all-product .product:hover button {
+  transform: translateY(-35px);
+}
+body #category-section-3 .all-product .product:hover .product-name h4 {
+  color: #239698;
+}
+body #category-section-3 .all-product .product:hover .product-image img {
+  transform: scale(1.03);
+  opacity: 0.7;
+}
+body #category-section-4 {
+  padding: 20px 0;
+}
+body #category-section-4 .title {
+  margin-bottom: 20px;
+}
+body #category-section-4 .elements .card {
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  padding: 15px;
+  position: relative;
+}
+body #category-section-4 .elements .card .element-img {
+  text-align: center;
+}
+body #category-section-4 .elements .card .element-img img {
+  width: 70%;
+  height: calc(80px + 60 * (100vw - 320px) / 1600);
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px 0 !important;
+}
+body #category-section-4 .elements .card .detail .stars i {
+  color: #ffb803;
+  font-size: 14px;
+}
+body #category-section-4 .elements .card .detail .name {
+  width: 70%;
+  margin-top: 5px;
+  text-transform: capitalize;
+  text-align: left;
+  transition: 0.4s;
+  color: #222 !important;
+  font-size: calc(15px + 1 * (100vw - 320px) / 1600);
+  line-height: 1.2;
+  font-weight: 400;
+}
+body #category-section-4 .elements .card .detail .price {
+  margin-top: 5px;
+  font-weight: 500;
+  color: #239698;
+  font-size: calc(15px + 1 * (100vw - 320px) / 1600);
+  line-height: 1.2;
+}
+body #category-section-4 .elements .card .detail .price del {
+  margin-left: 10px;
+  color: #4a5568;
+  font-weight: 400;
+}
+body #category-section-4 .elements .card .detail button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  padding: 7px 11px;
+  background-color: #239698;
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

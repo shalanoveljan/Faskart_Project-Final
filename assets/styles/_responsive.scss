@@ -1,17 +1,44 @@
-@media (max-width:576px){
-    .header-middle{
-     display: none;
-    }
-
-    .first{
+@media (max-width:576px) {
+    .header-middle {
         display: none;
     }
 
-    .second{
-        display:flex !important;
+    .header-top {
+        display: none;
     }
-    
-    #First{
+
+    .second {
+        display: flex !important;
+        z-index: 5487;
+    }
+
+    #First {
         height: 80vh;
     }
- }
+
+    .modal {
+        z-index: 564343343;
+        .modal-dialog {
+            .modal-content {
+                height: 97vh !important;
+
+                #close {
+                    top: 10px !important;
+                    right: 13px !important;
+                    padding: 10px !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+
+    .services {
+        gap: 10px;
+    }
+
+
+
+}

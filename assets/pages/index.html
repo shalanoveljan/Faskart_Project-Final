@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/styles/bootstrap.css">
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,327 +17,359 @@
 
 <body>
 
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="container">
+                <i class="fa-solid fa-xmark" id="close" data-bs-dismiss="modal" aria-label="Close"></i>
+                <h5 class="ms-1 mt-4">Choose your Delivery Location</h5>
+                <p class="ms-1 mt-2">Enter your address and we will specify the offer for your area.</p>
+                <div class="search mt-4 ms-1">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" placeholder="  Search Your Area">
+                </div>
+                <h6 class="mt-4 ms-3">Select a Location</h6><hr>
+                <ul>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                    <li><h6>Alabama</h6> <span>Min: $130</span></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
 
     <!-- Header -->
-    <header class="first">
-        <div class="header-top sticky-top">
-            <div class="container">
-                <div class="ht-all">
-                    <div class="logo">
-                        <a href="index.html" class="web-logo ">
-                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/logo/4.png" class="logo-img"
-                                alt="">
-                        </a>
-                    </div>
 
-                    <div class="center-box">
-                        <div class="location">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Location</span>
-                            <i class=" icon2 fa-solid fa-chevron-down"></i>
-                        </div>
-
-                        <div class="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="Search for products, styles,brands...">
-                            <button class="btn search-button" type="button">Search</button>
-                        </div>
-
-                    </div>
-
-                    <div class="support-box">
-                        <div class="support-image">
-                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/support.png" alt="">
-                        </div>
-                        <div class="support-number">
-                            <p>(123) 456 7890</p>
-                            <span>24/7 Support Center</span>
-                        </div>
-                    </div>
+    <div class="header-top sticky-top">
+        <div class="container">
+            <div class="ht-all">
+                <div class="logo">
+                    <a href="index.html" class="web-logo ">
+                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/logo/4.png" class="logo-img"
+                            alt="">
+                    </a>
                 </div>
 
+                <div class="center-box">
+                    <div  data-bs-toggle="modal" data-bs-target="#exampleModal" class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Location</span>
+                        <i class=" icon2 fa-solid fa-chevron-down"></i>
+                    </div>
 
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for products, styles,brands...">
+                        <button class="btn search-button" type="button">Search</button>
+                    </div>
+
+                </div>
+
+                <div class="support-box">
+                    <div class="support-image">
+                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/support.png" alt="">
+                    </div>
+                    <div class="support-number">
+                        <p>(123) 456 7890</p>
+                        <span>24/7 Support Center</span>
+                    </div>
+                </div>
             </div>
 
+
         </div>
-        <div class="header-middle">
-            <div class="container">
-                <div class="hm-all">
-                    <nav>
-                        <ul class="option-list-1">
-                            <li class="home first "> <span class="house">Home</span> <i
-                                    class=" icon2 fa-solid fa-chevron-down"></i>
-                                <div class="dropdownmenu close">
-                                    <div class="item">
-                                        <a class="dropdown-item" href="index.html">
-                                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
-                                                alt="">
-                                            <span>Kartshop</span>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a class="dropdown-item" href="index-2.html">
-                                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
-                                                alt="">
-                                            <span>Sweetshop</span>
-                                        </a>
 
-                                    </div>
-                                    <div class="item">
-                                        <a class="dropdown-item" href="index-3.html">
-                                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
-                                                alt="">
-                                            <span>Organic</span>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a class="dropdown-item" href="index-4.html">
-                                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
-                                                alt="">
-                                            <span>Supershop</span>
-                                        </a>
-                                    </div>
-
-                                    <div class="item">
-                                        <a class="dropdown-item" href="index-5.html">
-                                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
-                                                alt="">
-                                            <span>Slicktech</span>
-                                        </a>
-
-                                    </div </div> </li> <li class="shop"> <span>Shop</span> <i
-                                        class=" icon2 fa-solid fa-chevron-down"></i>
-                                    <div class="shop-drop close ">
-                                        <p class="first">Shop Category Slider</p>
-                                        <p>Shop Category Sidebar</p>
-                                        <p>Shop Banner</p>
-                                        <p>Shop Left Sidebar</p>
-                                        <p>Shop List</p>
-                                        <p>Shop Right Sidebar</p>
-                                        <p>Shop Top Filter</p>
-                                    </div>
-                            </li>
-                            <li class="product list2"> <span>Product</span> <i
-                                    class=" icon2 fa-solid fa-chevron-down"></i>
-                                <div class="product-drop close">
-                                    <p class="pro-first">Product 4 Image</p>
-                                    <p class="thumbnail">Product Thumbnail <i
-                                            class=" icon3 fa-solid fa-chevron-right ps-4"></i>
-                                        <div class="nested-drop close">
-                                            <p class="first">Left Thumbnail</p>
-                                            <p class="nested-drop-1">Right Thumbnail</p>
-                                            <p>Bottom Thumbnail</p>
-
-                                        </div>
-                                    </p>
-                                    <p>Product Bottom Thumbnail</p>
-                                    <p>Product Left Thumbnail</p>
-                                    <p>Product Right Thumbnail</p>
-                                    <p>Product Slider</p>
-                                    <p>Product Sticky</p>
-                                </div>
-                            </li>
-                            <li class=" mega list1"><span>Mega Menu</span> <i
-                                    class=" icon2 fa-solid fa-chevron-down"></i>
-                                <div class="megamenu-drop close">
-                                    <div class="row">
-                                        <div class="mega-drop-1 col-lg-4">
-                                            <h5 class="dropdown-header">Daily Vegetables</h5>
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Beans &amp;
-                                                Brinjals</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Broccoli
-                                                &amp; Cauliflower</a>
-
-                                            <a href="shop-left-sidebar.html" class="dropdown-item">Chilies,
-                                                Garlic, Lemon &amp; Ginger</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Cut
-                                                Vegetables &amp; Salads</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Gourd,
-                                                Cucumber &amp; Pumpkin</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Herbs &amp;
-                                                Sprouts</a>
-
-                                            <a href="demo-personal-portfolio.html" class="dropdown-item">Lettuce
-                                                &amp; Leafy</a>
-                                        </div>
-
-                                        <div class="mega-drop-2 col-lg-4">
-                                            <h5 class="dropdown-header">Baby Tender</h5>
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Beans &amp;
-                                                Brinjals</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Broccoli
-                                                &amp; Cauliflower</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Chilies,
-                                                Garlic, Lemon &amp; Ginger</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Cut
-                                                Vegetables &amp; Salads</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Gourd,
-                                                Cucumber &amp; Pumpkin</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Onions,
-                                                Potatoes &amp; Tomatoes</a>
-
-                                            <a href="shop-left-sidebar.html" class="dropdown-item">Peas &amp;
-                                                Corn</a>
-                                        </div>
-
-                                        <div class="mega-drop-3 col-lg-4">
-                                            <h5 class="dropdown-header">Exotic Vegetables</h5>
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Asparagus
-                                                &amp; Artichokes</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Avocados
-                                                &amp; Peppers</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Broccoli
-                                                &amp; Zucchini</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Celery,
-                                                Fennel &amp; Leeks</a>
-
-                                            <a class="dropdown-item" href="shop-left-sidebar.html">Chilies &amp;
-                                                Lime</a>
-                                        </div>
-
-                                        <div class="dropdown-column dropdown-column-img col-3"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="blog list1"><span>Blog</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
-                                <div class="blog-drop close">
-                                    <p class="first">Left Thumbnail</p>
-                                    <p>Right Thumbnail</p>
-                                    <p>Bottom Thumbnail</p>
-
-                                </div>
-                            </li>
-                            <li class="pages list1"><span>Pages</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
-                                <p class="new">New</p>
-                                <div class="page-drop close">
-                                    <p class="email">Email Tamplate <i class="light fa-solid fa-bolt"></i> <i
-                                            class=" icon4 fa-solid fa-chevron-right ps-4"></i>
-                                        <div class="nested-drop-page close">
-                                            <p class="pfirst">Abandontment</p>
-                                            <p>Offer Template</p>
-                                            <p>Order Success</p>
-                                            <p>Reset password</p>
-                                            <p>Welcome template</p>
-
-                                        </div>
-                                    </p>
-                                    <p class="invoice">Invoice Template <i class="light fa-solid fa-bolt"></i> <i
-                                            class=" icon4 fa-solid fa-chevron-right ps-3"></i>
-                                        <div class="nested-drop-page1 close">
-                                            <p class="first">Invoice 1</p>
-                                            <p>Invoice 2</p>
-                                            <p>Invoice 3</p>
-
-                                        </div>
-                                    </p>
-                                    <p>404</p>
-                                    <p>About us</p>
-                                    <p>Cart</p>
-                                    <p>Contact</p>
-                                    <p>Checkout</p>
-                                    <p>Coming soon</p>
-                                    <p>Compare</p>
-                                    <p>Faq</p>
-                                    <p>Order Success</p>
-                                    <p>Order Tracking</p>
-                                    <p>OTP</p>
-                                    <p>Search</p>
-                                    <p>User dashboard</p>
-                                    <p>Wishlist</p>
-                                </div>
-                            </li>
-                            <li class="seller list1"><span>Seller</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
-                                <div class="nested-drop-seller close">
-                                    <p class="first">Become a Seller</p>
-                                    <p>Seller Dashboard</p>
-                                    <p>Seller Details</p>
-                                    <p>Seller Details 2</p>
-                                    <p>Seller Grid</p>
-                                    <p>Seller Grid 2</p>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="right-menu">
-
-                        <ul class="option-list-2">
-                            <li class="same-icon"><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i>
-                                    <span>2</span></a></li>
-                            <li class="same-icon"><a href=""><i id="heart" class="fa-regular fa-heart"></i></a>
-
-                                <div class="drop-heart close">
-                                    <div class="head d-flex justify-content-between">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/2.png"
+    </div>
+    <div class="header-middle">
+        <div class="container">
+            <div class="hm-all">
+                <nav>
+                    <ul class="option-list-1">
+                        <li class="home first "> <span class="house">Home</span> <i
+                                class=" icon2 fa-solid fa-chevron-down"></i>
+                            <div class="dropdownmenu close">
+                                <div class="item">
+                                    <a class="dropdown-item" href="index.html">
+                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
                                             alt="">
-                                        <div class="text">
-                                            <h5>Peanut Butter Bite...</h5>
-                                            <h6><span>1 x</span> $25.68</h6>
-                                            <button class="close-button">
-                                                <i class="fa-solid fa-xmark"></i>
-                                            </button>
-                                        </div>
-
-
-
-                                    </div>
-
-                                    <hr>
-                                    <div class="foot">
-                                        <div class="price-box d-flex justify-content-between">
-                                            <h5>Price :</h5>
-                                            <h4 class="theme-color fw-bold">$106.58</h4>
-                                        </div>
-
-                                        <div class="button-group d-flex justify-content-between">
-                                            <a href="cart.html" class=" btn1 btn btn-sm cart-button">View Cart</a>
-                                            <a href="checkout.html"
-                                                class="btn2 btn btn-sm cart-button text-white">Checkout</a>
-                                        </div>
-
-                                    </div>
+                                        <span>Kartshop</span>
+                                    </a>
                                 </div>
-                            </li>
-                            <li class="same-icon"><a href=""><i class="fa-solid fa-cart-shopping"></i>
-                                    <span>2</span></a></li>
-                            <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+                                <div class="item">
+                                    <a class="dropdown-item" href="index-2.html">
+                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
+                                            alt="">
+                                        <span>Sweetshop</span>
+                                    </a>
 
-                        </ul>
+                                </div>
+                                <div class="item">
+                                    <a class="dropdown-item" href="index-3.html">
+                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
+                                            alt="">
+                                        <span>Organic</span>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="dropdown-item" href="index-4.html">
+                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
+                                            alt="">
+                                        <span>Supershop</span>
+                                    </a>
+                                </div>
 
+                                <div class="item">
+                                    <a class="dropdown-item" href="index-5.html">
+                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg"
+                                            alt="">
+                                        <span>Slicktech</span>
+                                    </a>
 
-
-                        <a target="_blank" class="btn-mobile" href="">
-                            <div class="mobile-image">
-                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/mobile.png" alt="">
+                                </div>
+                        </li>
+                        <li class="shop"> <span>Shop</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
+                            <div class="shop-drop close ">
+                                <p class="first">Shop Category Slider</p>
+                                <p>Shop Category Sidebar</p>
+                                <p>Shop Banner</p>
+                                <p>Shop Left Sidebar</p>
+                                <p>Shop List</p>
+                                <p>Shop Right Sidebar</p>
+                                <p>Shop Top Filter</p>
                             </div>
+                        </li>
+                        <li class="product list2"> <span>Product</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
+                            <div class="product-drop close">
+                                <p class="pro-first">Product 4 Image</p>
+                                <p class="thumbnail">Product Thumbnail <i
+                                        class=" icon3 fa-solid fa-chevron-right ps-4"></i>
+                                    <div class="nested-drop close">
+                                        <p class="first">Left Thumbnail</p>
+                                        <p class="nested-drop-1">Right Thumbnail</p>
+                                        <p>Bottom Thumbnail</p>
 
-                            <div class="mobile-name">
-                                <p>Download App</p>
+                                    </div>
+                                </p>
+                                <p>Product Bottom Thumbnail</p>
+                                <p>Product Left Thumbnail</p>
+                                <p>Product Right Thumbnail</p>
+                                <p>Product Slider</p>
+                                <p>Product Sticky</p>
                             </div>
-                        </a>
+                        </li>
+                        <li class=" mega list1"><span>Mega Menu</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
+                            <div class="megamenu-drop close">
+                                <div class="row">
+                                    <div class="mega-drop-1 col-lg-4">
+                                        <h5 class="dropdown-header">Daily Vegetables</h5>
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Beans &amp;
+                                            Brinjals</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Broccoli
+                                            &amp; Cauliflower</a>
+
+                                        <a href="shop-left-sidebar.html" class="dropdown-item">Chilies,
+                                            Garlic, Lemon &amp; Ginger</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cut
+                                            Vegetables &amp; Salads</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Gourd,
+                                            Cucumber &amp; Pumpkin</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Herbs &amp;
+                                            Sprouts</a>
+
+                                        <a href="demo-personal-portfolio.html" class="dropdown-item">Lettuce
+                                            &amp; Leafy</a>
+                                    </div>
+
+                                    <div class="mega-drop-2 col-lg-4">
+                                        <h5 class="dropdown-header">Baby Tender</h5>
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Beans &amp;
+                                            Brinjals</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Broccoli
+                                            &amp; Cauliflower</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Chilies,
+                                            Garlic, Lemon &amp; Ginger</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cut
+                                            Vegetables &amp; Salads</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Gourd,
+                                            Cucumber &amp; Pumpkin</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Onions,
+                                            Potatoes &amp; Tomatoes</a>
+
+                                        <a href="shop-left-sidebar.html" class="dropdown-item">Peas &amp;
+                                            Corn</a>
+                                    </div>
+
+                                    <div class="mega-drop-3 col-lg-4">
+                                        <h5 class="dropdown-header">Exotic Vegetables</h5>
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Asparagus
+                                            &amp; Artichokes</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Avocados
+                                            &amp; Peppers</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Broccoli
+                                            &amp; Zucchini</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Celery,
+                                            Fennel &amp; Leeks</a>
+
+                                        <a class="dropdown-item" href="shop-left-sidebar.html">Chilies &amp;
+                                            Lime</a>
+                                    </div>
+
+                                    <div class="dropdown-column dropdown-column-img col-3"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="blog list1"><span>Blog</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
+                            <div class="blog-drop close">
+                                <p class="first">Left Thumbnail</p>
+                                <p>Right Thumbnail</p>
+                                <p>Bottom Thumbnail</p>
+
+                            </div>
+                        </li>
+                        <li class="pages list1"><span>Pages</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
+                            <p class="new">New</p>
+                            <div class="page-drop close">
+                                <p class="email">Email Tamplate <i class="light fa-solid fa-bolt"></i> <i
+                                        class=" icon4 fa-solid fa-chevron-right ps-4"></i>
+                                    <div class="nested-drop-page close">
+                                        <p class="pfirst">Abandontment</p>
+                                        <p>Offer Template</p>
+                                        <p>Order Success</p>
+                                        <p>Reset password</p>
+                                        <p>Welcome template</p>
+
+                                    </div>
+                                </p>
+                                <p class="invoice">Invoice Template <i class="light fa-solid fa-bolt"></i> <i
+                                        class=" icon4 fa-solid fa-chevron-right ps-3"></i>
+                                    <div class="nested-drop-page1 close">
+                                        <p class="first">Invoice 1</p>
+                                        <p>Invoice 2</p>
+                                        <p>Invoice 3</p>
+
+                                    </div>
+                                </p>
+                                <p>404</p>
+                                <p>About us</p>
+                                <p>Cart</p>
+                                <p>Contact</p>
+                                <p>Checkout</p>
+                                <p>Coming soon</p>
+                                <p>Compare</p>
+                                <p>Faq</p>
+                                <p>Order Success</p>
+                                <p>Order Tracking</p>
+                                <p>OTP</p>
+                                <p>Search</p>
+                                <p>User dashboard</p>
+                                <p>Wishlist</p>
+                            </div>
+                        </li>
+                        <li class="seller list1"><span>Seller</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
+                            <div class="nested-drop-seller close">
+                                <p class="first">Become a Seller</p>
+                                <p>Seller Dashboard</p>
+                                <p>Seller Details</p>
+                                <p>Seller Details 2</p>
+                                <p>Seller Grid</p>
+                                <p>Seller Grid 2</p>
+
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="right-menu">
+
+                    <ul class="option-list-2">
+                        <li class="same-icon"><a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                <span>2</span></a></li>
+                        <li class="same-icon"><a href=""><i id="heart" class="fa-regular fa-heart"></i></a>
+
+                            <div class="drop-heart close">
+                                <div class="head d-flex justify-content-between">
+                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/2.png"
+                                        alt="">
+                                    <div class="text">
+                                        <h5>Peanut Butter Bite...</h5>
+                                        <h6><span>1 x</span> $25.68</h6>
+                                        <button class="close-button">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                    </div>
+
+
+
+                                </div>
+
+                                <hr>
+                                <div class="foot">
+                                    <div class="price-box d-flex justify-content-between">
+                                        <h5>Price :</h5>
+                                        <h4 class="theme-color fw-bold">$106.58</h4>
+                                    </div>
+
+                                    <div class="button-group d-flex justify-content-between">
+                                        <a href="cart.html" class=" btn1 btn btn-sm cart-button">View Cart</a>
+                                        <a href="checkout.html"
+                                            class="btn2 btn btn-sm cart-button text-white">Checkout</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="same-icon"><a href=""><i class="fa-solid fa-cart-shopping"></i>
+                                <span>2</span></a></li>
+                        <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+
+                    </ul>
+
+
+
+                    <a target="_blank" class="btn-mobile" href="">
+                        <div class="mobile-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/mobile.png" alt="">
+                        </div>
+
+                        <div class="mobile-name">
+                            <p>Download App</p>
+                        </div>
+                    </a>
 
 
 
 
-                    </div>
                 </div>
             </div>
-
         </div>
-    </header>
+
+    </div>
+
     <!-- Header -->
 
     <!-- Responsive Header -->
@@ -356,7 +389,7 @@
                     <div class="right-side ">
                         <ul class="second-icons d-flex  justify-content-between align-items-center">
                             <li><a href=""><i class="fa-regular fa-user"></i></a></li>
-                            <li><a href=""><i class="fa-solid fa-location-dot"></i></a></li>
+                            <li ><a  data-bs-toggle="modal" data-bs-target="#exampleModal" href=""><i class="fa-solid fa-location-dot"></i></a></li>
                         </ul>
 
                     </div>
@@ -386,7 +419,7 @@
             </div>
         </section>
 
-        <section id="Second">
+        <section data-aos="fade-up" id="Second">
             <div class="container">
                 <div class="slick-track row justify-content-between align-items-center pb-5 pt-4">
 
@@ -456,7 +489,7 @@
                     <h2>Shop By Categories</h2>
                 </div>
 
-                <div class="all-product">
+                <div data-aos="fade-up" class="all-product">
                     <div class="product">
 
                         <div class="product-name">
@@ -468,12 +501,12 @@
                             <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
                                 alt="">
                         </div>
-                            <button> 
-                                Shop Now
-                                <i class="fas fa-angle-right"></i>
-                            </button>
-                        
-                       
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
                     </div>
 
                 </div>
@@ -487,14 +520,187 @@
 
             <div class="container">
                 <div class="title">
-                    <h2>Drinks</h2>
+                    <h2>Fruits & Vegetables</h2>
+                </div>
+
+                <div data-aos="fade-up" class="elements row">
+                    <div class="col-lg-2">
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
             </div>
 
-            <div class="elements row">
-                <div class="col-lg-2">
-                    <div class="card">
+
+
+        </section>
+
+
+        <section id="category-section-5">
+            <div class="container">
+                <div class="title-5">
+                    <h2>Bank &amp; Wallet Offers</h2>
+                </div>
+
+                <div data-aos="fade-up" class="slider-bank row">
+
+                    <div class="col-lg-6">
+                        <div class="slider1">
+                            <div class="bank-slide1">
+                                <div class="bank-header row">
+
+                                    <div class="col-lg-6">
+                                        <div class="bank-left">
+                                            <div class="bank-image">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/bank/name/1.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="bank-name">
+
+                                                <h2>GET 10% OFF</h2>
+                                                <h5 class="discount text-content">When you spend $20</h5>
+                                                <h6 class="valid text-content">Valid for 30 days</h6>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="bank-right w-100 ">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/bank/price/1.svg"
+                                                alt="">
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="bank-footer bank-footer-1 row">
+
+                                    <div class="col-lg-6">
+                                        <h4>Code :
+                                            <span>MULTICART</span>
+                                        </h4>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <button type="button" class="bank-coupon btn">Copy Code</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="slider2">
+                            <div class="bank-slide2">
+                                <div class="bank-header row">
+
+                                    <div class="col-lg-6">
+                                        <div class="bank-left">
+                                            <div class="bank-image">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/bank/name/1.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="bank-name">
+
+                                                <h2>GET 10% OFF</h2>
+                                                <h5 class="discount text-content">When you spend $20</h5>
+                                                <h6 class="valid text-content">Valid for 30 days</h6>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="bank-right w-100 ">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/bank/price/1.svg"
+                                                alt="">
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="bank-footer bank-footer-1 row">
+
+                                    <div class="col-lg-6">
+                                        <h4>Code :
+                                            <span>MULTICART</span>
+                                        </h4>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <button type="button" class="bank-coupon btn">Copy Code</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="category-section-6">
+
+            <div class="container">
+                <div class="title">
+                    <h2>Top Selling Items</h2>
+                </div>
+
+                <div data-aos="fade-up" class="elements row row-cols-5  row align-items-center justify-content-between ">
+
+                    <div class="card col-xs-6">
                         <div class="element-img">
-                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/2.png" alt="">                  
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
                         </div>
                         <div class="detail">
                             <div class="stars">
@@ -504,31 +710,823 @@
                                 <i id="starx" class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             </div>
-                          
+
                             <h5 class="name text-title">Monster</h5>
                             <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
 
                             <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
                                 <i class="fa-solid fa-plus"></i>
                             </button>
-                            
+
+
+                            <div class="element-icons">
+                                <i id="eye" class="fa-regular fa-eye"></i>
+                                <i id="heart" class="fa-regular fa-heart"></i>
+                                <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+
                         </div>
 
-                        
+
 
                     </div>
+
+
+
+
+
+
+
                 </div>
-             
-                
             </div>
+        </section>
+
+        <section id="category-section-7">
+
+            <div class="container">
+                <div class="advertise row">
+                    <div class="col-12">
+                        <div class="offer-box">
+                            <h2><span>FREE GIFT ANY ORDER</span> 70% oFF</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-           
+        </section>
+
+        <section id="category-section-8">
+
+            <div class="container">
+                <div class="title">
+                    <h2>
+                        Breakfast & Dairy
+                    </h2>
+                </div>
+
+                <div data-aos="fade-up" class="elements row align-items-center ">
+
+                    <div class="col-lg-2">
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+
+                    
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="category-section-9">
+
+            <div class="container">
+                <div class="title">
+                    <h2>
+                        Chemist Store
+                    </h2>
+                </div>
+
+                <div data-aos="fade-up" class="elements row ">
+
+                    <div class="col-lg-2">
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+
+                  
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="category-section-10">
+            <div class="container">
+                <div class="offers row justify-content-between align-items-center">
+
+                    <div class="col-lg-6">
+                        <div class="offer">
+                            <div class="special-text">
+                                <h2 class="text-great fw-normal text-danger">50% special offer</h2>
+                                <h3 class="mb-1 fw-bold">Chocolate Shake Back in <br class="d-sm-block d-none">
+                                    Stock</h3>
+                                <h4 class="text-content">Offer Of the Week!</h4>
+                                <button class="btn text-white mt-sm-3 mt-1 fw-bold">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="offer">
+                            <div class="special-text">
+                                <h2 class="text-great fw-normal text-danger">50% special offer</h2>
+                                <h3 class="mb-1 fw-bold">Chocolate Shake Back in <br class="d-sm-block d-none">
+                                    Stock</h3>
+                                <h4 class="text-content">Offer Of the Week!</h4>
+                                <button class="btn text-white mt-sm-3 mt-1 fw-bold">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+        </section>
+
+        <section id="category-section-11">
+
+            <div class="container">
+                <div class="title">
+                    <h2>Drinks</h2>
+                </div>
+
+                <div data-aos="fade-up" class="elements row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
 
 
         </section>
 
+        <section id="category-section-12">
+
+            <div class="container">
+                <div class="title">
+                    <h2>Grocery & Staples</h2>
+                </div>
+
+                <div data-aos="fade-up" class="elements row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="category-section-13">
+            <div class="container">
+                <div class="all-delivers row">
+                    <div class="col-lg-8">
+                        <div class="deliver1">
+                        <div class="deliver1-detail">
+                            <h3 class="fw-bold banner-contain">Safe Delivery to the door</h3>
+                            <h4 class="mb-sm-3 mb-2 delivery-contain">Make money on your terms. Anytime and anyhow.
+                            </h4>
+                            <ul class="banner-list">
+                                <li>
+                                    <div class="delivery-box">
+                                        <div class="check-icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+
+                                        <div class="check-contain">
+                                            <h5>Get live order tracking</h5>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="delivery-box">
+                                        <div class="check-icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+
+                                        <div class="check-contain">
+                                            <h5>Get latest feature updates</h5>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button class="btn text-white mt-sm-4 mt-3 fw-bold">Read More</button>
+                        </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="deliver2 pt-lg-4 h-100">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/banner/9.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="category-section-14">
+
+            <div class="container">
+                <div class="title">
+                    <h2>Personal Care</h2>
+                </div>
+
+                <div data-aos="fade-up" class="elements row align-items-center">
+                    <div class="col-lg-2 ">
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="category-section-15">
+
+            <div class="container">
+                <div class="title">
+                    <h2>Kitchen & Dining Needs</h2>
+                </div>
+
+                <div data-aos="fade-up" class="elements row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section id="category-section-16">
+
+            <div class="container">
+                <div class="title">
+                    <h2>Blog</h2>
+                </div>
+    
+                <div class="sellings row align-items-center">
+    
+                    <div class="col-lg-6">
+                        <div class="blog-box-1">
+                        <div class="blog-image">
+                              <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/blog/1.jpg" alt="">
+                        </div>
+                        <div class="blog-detail">
+                            <label>Conversion rate optimization</label>
+                            <h3>Best selling bag online market place...</h3>
+                            <h5 class="text-content">Anil Viradiya - MARCH 9, 2022</h5>
+                        </div>
+    
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-6">
+                        <div class="blog-box-2">
+                            <div class="blog-image">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/blog/2.jpg" alt="">
+                          </div>
+                          <div class="blog-detail">
+                              <label>Conversion rate optimization</label>
+                              <h3>Best selling bag online market place...</h3>
+                              <h5 class="text-content">Anil Viradiya - MARCH 9, 2022</h5>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+          
+        </section>
+
+        <section id="category-section-17">
+            <div class="container">
+                <div class="services row align-items-center justify-content-between">
+
+                    <div class="col-lg-2 col-12">
+                        <div class="service row align-items-center justify-content-between ">
+                            <div class="col-lg-2 col-2 p-0">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-10 col-10 p-0">
+                                <div class="service-content">
+                                    <h3>Free Shipping</h3>  
+                                    <h6 class="text-content">Free Shipping world wide</h6>
+                                
+    
+                                </div>
+                            </div>
+                          
+                        </div>
+    
+                    </div>
+
+                    <div class="col-lg-2 col-12">
+                        <div class="service row align-items-center justify-content-between ">
+                            <div class="col-lg-2 col-2 p-0">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-10 col-10 p-0">
+                                <div class="service-content">
+                                    <h3>Free Shipping</h3>  
+                                    <h6 class="text-content">Free Shipping world wide</h6>
+                                
+    
+                                </div>
+                            </div>
+                          
+                        </div>
+    
+                    </div>
+                   
+
+                    <div class="col-lg-2 col-12">
+                        <div class="service row align-items-center justify-content-between ">
+                            <div class="col-lg-2 col-2 p-0">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-10 col-10 p-0">
+                                <div class="service-content">
+                                    <h3>Free Shipping</h3>  
+                                    <h6 class="text-content">Free Shipping world wide</h6>
+                                
+    
+                                </div>
+                            </div>
+                          
+                        </div>
+    
+                    </div>
+                   
+
+                    <div class="col-lg-2 col-12">
+                        <div class="service row align-items-center justify-content-between ">
+                            <div class="col-lg-2 col-2 p-0">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-10 col-10 p-0">
+                                <div class="service-content">
+                                    <h3>Free Shipping</h3>  
+                                    <h6 class="text-content">Free Shipping world wide</h6>
+                                
+    
+                                </div>
+                            </div>
+                          
+                        </div>
+    
+                    </div>
+                   
+
+                    <div class="col-lg-2 col-12">
+                        <div class="service row align-items-center justify-content-between ">
+                            <div class="col-lg-2 col-2 p-0">
+                                <div class="service-icon">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-10 col-10 p-0">
+                                <div class="service-content">
+                                    <h3>Free Shipping</h3>  
+                                    <h6 class="text-content">Free Shipping world wide</h6>
+                                
+    
+                                </div>
+                            </div>
+                          
+                        </div>
+    
+                    </div>
+                   
+                   
+                  
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Footer Start -->
+
+        <footer class="section-t-space footer-section-2 footer-color-2">
+            <div class="container">
+                <div class="main-footer">
+                    <div class="row g-md-4 gy-sm-5">
+                        <div class="col-xxl-3 col-xl-4 col-sm-6">
+                            <a href="index.html" class="foot-logo">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/logo/4.png" alt="">
+                            </a>
+                            <p class="information-text">it is a long established fact that a reader will
+                                be distracted by the readable content.</p>
+                            <ul class="social-icon">
+                                <li>
+                                    <a href="https://www.facebook.com/">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin">
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/i/flow/login">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://in.pinterest.com/">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class=" list-1 col-xxl-2 col-xl-4 col-sm-6">
+                            <div class="footer-title">
+                                <h4 class="text-white">About Fastkart</h4>
+                            </div>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="about-us.html">About Us</a>
+                                </li>
+                                <li>
+                                    <p>Contact Us</p>
+                                </li>
+                                <li>
+                                <p>Terms &amp; Coditions</p>
+                                </li>
+                                <li>
+                                   <p> Careers</p>
+                                </li>
+                                <li>
+                                    <p>Latest Blog</p>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="list-2 col-xxl-2 col-xl-4 col-sm-6">
+                            <div class="footer-title">
+                                <h4 class="text-white">Useful Link</h4>
+                            </div>
+                            <ul class="footer-list">
+                                <li>
+                                 <p>Your Order</p>
+                                </li>
+                                <li>
+                                    <p>Your Account</p>
+                                </li>
+                                <li>
+                                    <p>Track Orders</p>
+                                </li>
+                                <li>
+                                 <p>Your Wishlist</p>
+                                </li>
+                                <li>
+                                    <p>FAQs</p>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="list-3 col-xxl-2 col-xl-4 col-sm-6">
+                            <div class="footer-title">
+                                <h4 class="text-white">Categories</h4>
+                            </div>
+                            <ul class="footer-list">
+                                <li>
+                                   <p>Fresh Vegetables</p>
+                                </li>
+                                <li>
+                                    <p>Hot Spice</p>      
+                                </li>
+                                <li>
+                                    <p>Brand New Bags</p>
+                                </li>
+                                <li>
+                                    <p>New Bakery</p>
+                                </li>
+                                <li>
+                                    <p>New Grocery</p>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="list-4 col-xxl-3 col-xl-4 col-sm-6">
+                            <div class="footer-title">
+                                <h4 class="text-white">Store infomation</h4>
+                            </div>
+                            <ul class="footer-list">
+                                <li>
+                                    
+                                        <div class="inform-box d-flex flex-start-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                            <p>Fastkart Demo Store, Demo store india 345 - 659</p>
+                                        </div>
+                                   
+                                </li>
+    
+                                <li>
+                                  
+                                        <div class="inform-box d-flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                            <p>Call us: 123-456-7890</p>
+                                        </div>
+                                    
+                                </li>
+    
+                                <li>
+                                   
+                                        <div class="inform-box d-flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                            <p>Email Us: Support@Fastkart.com</p>
+                                        </div>
+                                   
+                                </li>
+    
+                                <li>
+                                   
+                                        <div class="inform-box d-flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                                            <p>Fax: 123456</p>
+                                        </div>
+                                  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sub-footer">
+                    <div class="left-footer">
+                        <p>2022 Copyright By Themeforest Powered By Pixelstrap</p>
+                    </div>
+    
+                    <ul class="payment-box">
+                        <li>
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/paymant/visa.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/paymant/discover.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/paymant/american.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/paymant/master-card.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/icon/paymant/giro-pay.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+
+
+
     </main>
     <script src="/assets/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/js/app.js"></script>
 </body>
 

@@ -12,9 +12,6 @@
         z-index: 5487;
     }
 
-    #First {
-        height: 80vh;
-    }
 
     .modal {
         z-index: 564343343;
@@ -38,7 +35,72 @@
     .services {
         gap: 10px;
     }
+    .bank-footer{
+        display: flex;
+    }
+
+    #First{
+        height: 30vh !important;  
+        
+       
+    }
+
+    .context{
+    top: 12% !important;
+    }
+
+    footer{
+
+        .footer-title h4{
+            margin: 15px 0;
+        }
+
+    }
 
 
+    .filter-category{
+        ul li{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .grid-icons{
+        padding-top: 15px;
+    }
+
+    .category-dropdown{
+        padding-top: 15px;
+
+    }
+
+    .filter-button{
+        display: flex;
+        margin-top: 15px;
+    }
+
+
+
+    #category-section-18{
+        display: none !important;
+    }
+    
+    footer{
+        margin-top: 30px;
+    }
+    
+    .dashboard-left-sidebar{
+        display: none;
+    }
+    
+    .left-dashboard-show{
+        outline: none;
+        border: none !important;
+        padding: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320))) calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        border-radius: 5px;
+        color: #fff !important;
+        background: linear-gradient(90deg, #ff6b6b 0%, #ff4f4f 100%);
+    }
 
 }
+

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinalProject</title>
     <link rel="stylesheet" href="/assets/styles/bootstrap.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -143,7 +143,8 @@
                         <li class="shop"> <span>Shop</span> <i class=" icon2 fa-solid fa-chevron-down"></i>
                             <div class="shop-drop close ">
                                 <p class="first">Shop Category Slider</p>
-                                <p>Shop Category Sidebar</p>
+                                <a href="shop.html"> <p>Shop Category Sidebar</p></a>
+                               
                                 <p>Shop Banner</p>
                                 <p>Shop Left Sidebar</p>
                                 <p>Shop List</p>
@@ -277,7 +278,10 @@
                                 <p>404</p>
                                 <p>About us</p>
                                 <p>Cart</p>
-                                <p>Contact</p>
+                                <a href="contact.html">
+                                    <p>Contact</p>
+                                </a>
+                               
                                 <p>Checkout</p>
                                 <p>Coming soon</p>
                                 <p>Compare</p>
@@ -345,7 +349,7 @@
                         </li>
                         <li class="same-icon"><a href=""><i class="fa-solid fa-cart-shopping"></i>
                                 <span>2</span></a></li>
-                        <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="user.html"><i  class="fa-regular fa-user"></i></a></li>
 
                     </ul>
 
@@ -421,10 +425,10 @@
 
         <section data-aos="fade-up" id="Second">
             <div class="container">
-                <div class="slick-track row justify-content-between align-items-center pb-5 pt-4">
+                <div class="corusel-track pb-5 pt-4">
 
-                    <div class="col-lg-3">
-                        <div class="slick">
+                 
+                        <div class="corusel">
                             <div class="content">
 
                                 <h5 class="fw-light mb-2">50% Discount</h5>
@@ -435,22 +439,7 @@
 
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="slick">
-                            <div class="content">
-                                <h5 class="fw-light mb-2">50% Discount</h5>
-                                <h4 class="fw-bold mb-0">Summer Ice Cream</h4>
-                                <button onclick="location.href = 'shop-left-sidebar.html';"
-                                    class="btn shop-now-button mt-3 ps-0 mend-auto theme-color fw-bold"
-                                    tabindex="0">Shop Now <i class="fa-solid fa-chevron-right"></i></button>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="slick">
+                        <div class="corusel">
                             <div class="content">
 
                                 <h5 class="fw-light mb-2">50% Discount</h5>
@@ -461,9 +450,8 @@
 
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="slick">
+                   
+                        <div class="corusel">
                             <div class="content">
 
                                 <h5 class="fw-light mb-2">50% Discount</h5>
@@ -474,7 +462,31 @@
 
                             </div>
                         </div>
-                    </div>
+                        
+                        <div class="corusel">
+                            <div class="content">
+
+                                <h5 class="fw-light mb-2">50% Discount</h5>
+                                <h4 class="fw-bold mb-0">Summer Ice Cream</h4>
+                                <button onclick="location.href = 'shop-left-sidebar.html';"
+                                    class="btn shop-now-button mt-3 ps-0 mend-auto theme-color fw-bold"
+                                    tabindex="0">Shop Now <i class="fa-solid fa-chevron-right"></i></button>
+
+                            </div>
+                        </div>
+                        
+                        <div class="corusel">
+                            <div class="content">
+
+                                <h5 class="fw-light mb-2">50% Discount</h5>
+                                <h4 class="fw-bold mb-0">Summer Ice Cream</h4>
+                                <button onclick="location.href = 'shop-left-sidebar.html';"
+                                    class="btn shop-now-button mt-3 ps-0 mend-auto theme-color fw-bold"
+                                    tabindex="0">Shop Now <i class="fa-solid fa-chevron-right"></i></button>
+
+                            </div>
+                        </div>
+
 
 
 
@@ -508,6 +520,150 @@
 
 
                     </div>
+                    <div class="product">
+
+                        <div class="product-name">
+                            <h4>Fashion</h4>
+                            <h6>25 items</h6>
+                        </div>
+
+                        <div class="product-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
+                                alt="">
+                        </div>
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="product">
+
+                        <div class="product-name">
+                            <h4>Fashion</h4>
+                            <h6>25 items</h6>
+                        </div>
+
+                        <div class="product-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
+                                alt="">
+                        </div>
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="product">
+
+                        <div class="product-name">
+                            <h4>Fashion</h4>
+                            <h6>25 items</h6>
+                        </div>
+
+                        <div class="product-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
+                                alt="">
+                        </div>
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="product">
+
+                        <div class="product-name">
+                            <h4>Fashion</h4>
+                            <h6>25 items</h6>
+                        </div>
+
+                        <div class="product-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
+                                alt="">
+                        </div>
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="product">
+
+                        <div class="product-name">
+                            <h4>Fashion</h4>
+                            <h6>25 items</h6>
+                        </div>
+
+                        <div class="product-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
+                                alt="">
+                        </div>
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="product">
+
+                        <div class="product-name">
+                            <h4>Fashion</h4>
+                            <h6>25 items</h6>
+                        </div>
+
+                        <div class="product-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
+                                alt="">
+                        </div>
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="product">
+
+                        <div class="product-name">
+                            <h4>Fashion</h4>
+                            <h6>25 items</h6>
+                        </div>
+
+                        <div class="product-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
+                                alt="">
+                        </div>
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
+                    </div>
+                    <div class="product">
+
+                        <div class="product-name">
+                            <h4>Fashion</h4>
+                            <h6>25 items</h6>
+                        </div>
+
+                        <div class="product-image">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/category/1.png"
+                                alt="">
+                        </div>
+                        <button>
+                            Shop Now
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+
+                    </div>
 
                 </div>
 
@@ -523,8 +679,7 @@
                     <h2>Fruits & Vegetables</h2>
                 </div>
 
-                <div data-aos="fade-up" class="elements row">
-                    <div class="col-lg-2">
+                <div data-aos="fade-up" class="elements">
                         <div class="card">
                             <div class="element-img">
                                 <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png"
@@ -558,9 +713,208 @@
 
 
                         </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
 
 
-                    </div>
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        
+
+
+                    
 
 
 
@@ -579,7 +933,7 @@
                     <h2>Bank &amp; Wallet Offers</h2>
                 </div>
 
-                <div data-aos="fade-up" class="slider-bank row">
+                <div data-aos="fade-up" class="slider-bank row g-5">
 
                     <div class="col-lg-6">
                         <div class="slider1">
@@ -615,13 +969,13 @@
 
                                 <div class="bank-footer bank-footer-1 row">
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-6">
                                         <h4>Code :
                                             <span>MULTICART</span>
                                         </h4>
                                     </div>
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-6">
                                         <button type="button" class="bank-coupon btn">Copy Code</button>
                                     </div>
 
@@ -667,13 +1021,13 @@
 
                                 <div class="bank-footer bank-footer-1 row">
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-6">
                                         <h4>Code :
                                             <span>MULTICART</span>
                                         </h4>
                                     </div>
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 col-6">
                                         <button type="button" class="bank-coupon btn">Copy Code</button>
                                     </div>
 
@@ -696,9 +1050,233 @@
                     <h2>Top Selling Items</h2>
                 </div>
 
-                <div data-aos="fade-up" class="elements row row-cols-5  row align-items-center justify-content-between ">
+                <div data-aos="fade-up" class="top-elements">
 
-                    <div class="card col-xs-6">
+                    <div class="card">
+                        <div class="element-img">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="stars">
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="starx" class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <h5 class="name text-title">Monster</h5>
+                            <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                            <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+
+                            <div class="element-icons">
+                                <i id="eye" class="fa-regular fa-eye"></i>
+                                <i id="heart" class="fa-regular fa-heart"></i>
+                                <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="card">
+                        <div class="element-img">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="stars">
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="starx" class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <h5 class="name text-title">Monster</h5>
+                            <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                            <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+
+                            <div class="element-icons">
+                                <i id="eye" class="fa-regular fa-eye"></i>
+                                <i id="heart" class="fa-regular fa-heart"></i>
+                                <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="card">
+                        <div class="element-img">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="stars">
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="starx" class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <h5 class="name text-title">Monster</h5>
+                            <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                            <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+
+                            <div class="element-icons">
+                                <i id="eye" class="fa-regular fa-eye"></i>
+                                <i id="heart" class="fa-regular fa-heart"></i>
+                                <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="card">
+                        <div class="element-img">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="stars">
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="starx" class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <h5 class="name text-title">Monster</h5>
+                            <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                            <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+
+                            <div class="element-icons">
+                                <i id="eye" class="fa-regular fa-eye"></i>
+                                <i id="heart" class="fa-regular fa-heart"></i>
+                                <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="card">
+                        <div class="element-img">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="stars">
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="starx" class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <h5 class="name text-title">Monster</h5>
+                            <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                            <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+
+                            <div class="element-icons">
+                                <i id="eye" class="fa-regular fa-eye"></i>
+                                <i id="heart" class="fa-regular fa-heart"></i>
+                                <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="card">
+                        <div class="element-img">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="stars">
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="starx" class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <h5 class="name text-title">Monster</h5>
+                            <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                            <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+
+                            <div class="element-icons">
+                                <i id="eye" class="fa-regular fa-eye"></i>
+                                <i id="heart" class="fa-regular fa-heart"></i>
+                                <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="card">
+                        <div class="element-img">
+                            <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
+                        </div>
+                        <div class="detail">
+                            <div class="stars">
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="starx" class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <h5 class="name text-title">Monster</h5>
+                            <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                            <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+
+                            <div class="element-icons">
+                                <i id="eye" class="fa-regular fa-eye"></i>
+                                <i id="heart" class="fa-regular fa-heart"></i>
+                                <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="card">
                         <div class="element-img">
                             <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png" alt="">
                         </div>
@@ -737,6 +1315,8 @@
 
 
 
+
+
                 </div>
             </div>
         </section>
@@ -744,7 +1324,7 @@
         <section id="category-section-7">
 
             <div class="container">
-                <div class="advertise row">
+                <div class="advertise ">
                     <div class="col-12">
                         <div class="offer-box">
                             <h2><span>FREE GIFT ANY ORDER</span> 70% oFF</h2>
@@ -763,9 +1343,7 @@
                     </h2>
                 </div>
 
-                <div data-aos="fade-up" class="elements row align-items-center ">
-
-                    <div class="col-lg-2">
+                <div data-aos="fade-up" class="elements-1">
                         <div class="card">
                             <div class="element-img">
                                 <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
@@ -799,7 +1377,238 @@
     
     
                         </div>
-                    </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/6.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                   
 
                     
 
@@ -822,9 +1631,9 @@
                     </h2>
                 </div>
 
-                <div data-aos="fade-up" class="elements row ">
+                <div data-aos="fade-up" class="elements-chemistry">
 
-                    <div class="col-lg-2">
+                    
                         <div class="card">
                             <div class="element-img">
                                 <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
@@ -858,7 +1667,245 @@
     
     
                         </div>
-                    </div>
+
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+    
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+    
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+    
+    
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                    
 
                   
 
@@ -874,7 +1921,7 @@
 
         <section id="category-section-10">
             <div class="container">
-                <div class="offers row justify-content-between align-items-center">
+                <div class="offers row justify-content-between align-items-center g-3">
 
                     <div class="col-lg-6">
                         <div class="offer">
@@ -911,8 +1958,240 @@
                     <h2>Drinks</h2>
                 </div>
 
-                <div data-aos="fade-up" class="elements row align-items-center">
-                    <div class="col-lg-2">
+                <div data-aos="fade-up" class="elements-drinks">
+                    
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
                         <div class="card">
                             <div class="element-img">
                                 <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png"
@@ -948,7 +2227,11 @@
                         </div>
 
 
-                    </div>
+
+
+
+
+                    
 
 
 
@@ -967,8 +2250,238 @@
                     <h2>Grocery & Staples</h2>
                 </div>
 
-                <div data-aos="fade-up" class="elements row align-items-center">
-                    <div class="col-lg-2">
+                <div data-aos="fade-up" class="elements-grocery">
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
                         <div class="card">
                             <div class="element-img">
                                 <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png"
@@ -1004,10 +2517,6 @@
                         </div>
 
 
-                    </div>
-
-
-
 
                 </div>
             </div>
@@ -1017,7 +2526,7 @@
         </section>
         <section id="category-section-13">
             <div class="container">
-                <div class="all-delivers row">
+                <div class="all-delivers row g-4">
                     <div class="col-lg-8">
                         <div class="deliver1">
                         <div class="deliver1-detail">
@@ -1072,8 +2581,239 @@
                     <h2>Personal Care</h2>
                 </div>
 
-                <div data-aos="fade-up" class="elements row align-items-center">
-                    <div class="col-lg-2 ">
+                <div data-aos="fade-up" class="elements-personal">
+                   
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
                         <div class="card">
                             <div class="element-img">
                                 <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png"
@@ -1109,7 +2849,7 @@
                         </div>
 
 
-                    </div>
+                    
 
 
 
@@ -1127,8 +2867,239 @@
                     <h2>Kitchen & Dining Needs</h2>
                 </div>
 
-                <div data-aos="fade-up" class="elements row align-items-center">
-                    <div class="col-lg-2">
+                <div data-aos="fade-up" class="elements-kitchen">
+                    
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card">
+                            <div class="element-img">
+                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
+                                    alt="">
+                            </div>
+                            <div class="detail">
+                                <div class="stars">
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="star" class="fa-solid fa-star"></i>
+                                    <i id="starx" class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+
+                                <h5 class="name text-title">Monster</h5>
+                                <h5 class="price theme-color">$65.21<del>$71.25</del></h5>
+
+                                <button class="add-button addcart-button btn buy-button text-light" tabindex="0">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+
+                                <div class="element-icons">
+                                    <i id="eye" class="fa-regular fa-eye"></i>
+                                    <i id="heart" class="fa-regular fa-heart"></i>
+                                    <i id="compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
                         <div class="card">
                             <div class="element-img">
                                 <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/kichen/2.png"
@@ -1164,7 +3135,7 @@
                         </div>
 
 
-                    </div>
+                   
 
 
 
@@ -1183,9 +3154,9 @@
                     <h2>Blog</h2>
                 </div>
     
-                <div class="sellings row align-items-center">
+                <div class="sellings">
     
-                    <div class="col-lg-6">
+                    
                         <div class="blog-box-1">
                         <div class="blog-image">
                               <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/blog/1.jpg" alt="">
@@ -1197,9 +3168,9 @@
                         </div>
     
                         </div>
-                    </div>
+                    
                    
-                    <div class="col-lg-6">
+                    
                         <div class="blog-box-2">
                             <div class="blog-image">
                                 <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/blog/2.jpg" alt="">
@@ -1210,7 +3181,19 @@
                               <h5 class="text-content">Anil Viradiya - MARCH 9, 2022</h5>
                           </div>
                         </div>
-                    </div>
+
+                        <div class="blog-box-1">
+                            <div class="blog-image">
+                                  <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/blog/1.jpg" alt="">
+                            </div>
+                            <div class="blog-detail">
+                                <label>Conversion rate optimization</label>
+                                <h3>Best selling bag online market place...</h3>
+                                <h5 class="text-content">Anil Viradiya - MARCH 9, 2022</h5>
+                            </div>
+        
+                            </div>
+                   
                 </div>
             </div>
 
@@ -1336,6 +3319,9 @@
             </div>
 
         </section>
+
+
+
 
 
         <!-- Footer Start -->
@@ -1521,10 +3507,26 @@
         <!-- Footer End -->
 
 
+        <div class="reload-icons">
+            
+            <div class="setting-icon">
+            <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="reload-icon ">
+
+                <a href="#">
+                    <i class="fa-solid fa-angle-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+
 
 
     </main>
     <script src="/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/assets/js/app.js"></script>

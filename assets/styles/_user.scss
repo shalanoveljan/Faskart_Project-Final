@@ -1,4 +1,4 @@
-a{
+a {
     color: #222 !important;
     text-decoration: none !important;
 }
@@ -139,7 +139,7 @@ a{
 
 
             }
-       
+
 
         }
 
@@ -148,7 +148,7 @@ a{
             background-color: #f8f8f8;
             padding: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
             border-radius: 8px;
-            
+
 
             .title {
                 margin-bottom: calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
@@ -168,14 +168,15 @@ a{
                     position: relative;
                     z-index: 0;
                     color: #0da487;
-                    i{
+
+                    i {
                         z-index: 2;
                         background-color: #f8f8f8;
                         position: relative;
                         left: 30px;
                         padding: 0 5px;
-                        
-                        
+
+
                     }
 
                     &::before {
@@ -188,7 +189,7 @@ a{
                         left: 0;
                         background-color: #0da487;
                         z-index: -1;
-                        
+
                     }
 
 
@@ -325,7 +326,8 @@ a{
                     font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
                     font-weight: 400;
                 }
-                a{
+
+                a {
                     text-decoration: none;
                     color: #0da487;
                     font-size: 14px;
@@ -335,13 +337,50 @@ a{
         }
 
 
-            .active {
-                border-left: 3px solid #0da487 !important;
-                background-color: #e0f0ed !important;
-            }
+        .active {
+            border-left: 3px solid #0da487 !important;
+            background-color: #e0f0ed !important;
+        }
     }
 
 }
 
 
+#service-section{
+    padding-top: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: 0;
+    .service-contain {
+        padding-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
 
+        .box-4{
+            border-right: none !important;
+        }
+        .service-box {
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-right: 10px;
+            border-right: 1px dashed #4a5568;
+    
+            img {
+                width: calc(35px + (40 - 35) * ((100vw - 320px) / (1920 - 320)));
+                height: calc(35px + (40 - 35) * ((100vw - 320px) / (1920 - 320)));
+                object-fit: contain;
+            }
+        }
+    
+        .service-detail {
+            margin-left: 20px;
+    
+            h5 {
+                font-weight: 500;
+                color: #222;
+                font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (1920 - 320)));
+                line-height: 1.2;
+                margin: 0;
+            }
+        }
+    }
+}

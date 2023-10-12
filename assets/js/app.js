@@ -472,7 +472,7 @@ $('.elements-personal').slick({
 });
 
 $('.elements-kitchen').slick({
-  dots:false,
+  dots:true,
   autoplay:true,
   infinite:true,
   speed: 300,
@@ -582,3 +582,35 @@ $('.corusel-track').slick({
     // instead of a settings object
   ]
 });
+
+
+
+let reload=document.querySelector('.reload-icon');
+let ht=document.querySelector('.header-top');
+
+window.onscroll=function(){
+  Scroll();
+  HeaderScroll();
+}
+
+function HeaderScroll() {
+  if(document.documentElement.scrollTop>150 || document.body.scrollTop>170){
+  console.log('sa');
+    ht.classList.add('sticky-top');
+    } 
+    else{
+    reload.classList.add('d-none');
+
+    }
+  
+}
+function Scroll() {
+  if(document.documentElement.scrollTop>120 || document.body.scrollTop>120){
+    reload.classList.remove('d-none');
+    } 
+    else{
+    reload.classList.add('d-none');
+
+    }
+  
+}

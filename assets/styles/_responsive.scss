@@ -45,6 +45,10 @@
        
     }
 
+    .slick-prev{
+        left: 80% !important;
+    }
+
     .context{
     top: 12% !important;
     }
@@ -80,7 +84,7 @@
 
 
 
-    #category-section-18{
+    #service-section{
         display: none !important;
     }
     
@@ -101,6 +105,72 @@
         color: #fff !important;
         background: linear-gradient(90deg, #ff6b6b 0%, #ff4f4f 100%);
     }
+
+    .slick-prev{
+        z-index: 2;
+        left: 50vh;
+    }
+
+    #category-section-13 .all-delivers .deliver1{
+        background-image: none !important;
+        background-color:#eaf5f5 ;
+
+        .deliver1-detail{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width: 100% !important;
+        }
+    }
+
+   .ser-item{
+    width:100% !important;
+  
+   }
+
+   .blogs{
+    gap: 25px;
+   }
+
+   .blog-box{
+    width: 100% !important;
+
+    .blog-img{
+        height: 250px;
+        width: 100%;
+    
+        img{
+            object-fit: contain;
+        }
+    }
+   }
+
+   .client{
+    margin-bottom: 15px;
+   }
+
+   .fresh-image-1, .fresh-image-2{
+    height: 25vh !important;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

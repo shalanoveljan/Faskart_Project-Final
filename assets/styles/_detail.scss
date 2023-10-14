@@ -8,6 +8,7 @@
 
         .cake-img{
 
+
             img{
                 filter: grayscale(0);
                 filter: blur(1.5px);
@@ -24,7 +25,7 @@
 
             .slider-img {
 
-                width: 270px;
+                width: 330px;
                 position: relative;
                 left: 0px;
                 top: 0px;
@@ -32,6 +33,7 @@
                 opacity: 1;
                 margin: 0 10px;
                 display: block;
+                
 
                 img {
                     max-width: 100%;

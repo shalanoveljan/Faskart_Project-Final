@@ -154,7 +154,55 @@
     height: 25vh !important;
    }
 
+   .grid-icons{
+    display: none;
+   }
 
+   .product-detail{
+   margin: 0 auto;
+   }
+
+
+
+   .orderone{
+
+    order: 1;
+
+   
+
+   }
+
+   .ordertwo{
+    order: -1;
+   }
+
+   
+
+   .right-box-contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .slider-img{
+   margin-left: 35px !important;
+   }
+
+
+   .payment-option ul{
+
+    display: flex; 
+     flex-direction: row; 
+    justify-content: center;
+
+   }
+
+   .payment-option h4{
+    text-align: center;
+   }
+
+
+   
 
 
 

@@ -1,4 +1,10 @@
 @media (max-width:576px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+  
     .header-middle {
         display: none;
     }
@@ -10,6 +16,11 @@
     .second {
         display: flex !important;
         z-index: 5487;
+    }
+
+    {
+        overflow-x: hidden;
+        
     }
 
 

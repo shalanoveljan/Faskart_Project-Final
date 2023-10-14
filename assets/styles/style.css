@@ -9,6 +9,9 @@
     display: flex !important;
     z-index: 5487;
   }
+  main {
+    overflow-x: hidden;
+  }
   .modal {
     z-index: 564343343;
   }
@@ -2955,6 +2958,7 @@ body .second .left-side {
   width: 50%;
 }
 body .second .left-side img {
+  cursor: pointer;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;

@@ -62,7 +62,7 @@ $(".elements").slick({
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -99,7 +99,7 @@ $(".top-elements").slick({
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -136,7 +136,7 @@ $(".elements-1").slick({
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -210,7 +210,7 @@ $(".elements-drinks").slick({
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 576,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -471,7 +471,7 @@ for (let btn of buttons) {
         let price = this.previousElementSibling.querySelector('span').innerHTML;
         let image = this.parentElement.previousElementSibling.querySelector('img').src;
 
-        let items = JSON.parse(localStorage.getItem("products")) || [];
+        let items = JSON.parse(localStorage.getItem("products"));
 
         let existProd = items.find((x) => x.Id === id);
 
@@ -484,19 +484,24 @@ for (let btn of buttons) {
                 Count: 1,
             });
             localStorage.setItem("products", JSON.stringify(items));
+            document.querySelector(".alertbox span").innerHTML = "Added in Basket";
+            document.querySelector(".alertbox").style.right = "5%";
         } else {
             existProd.Count += 1;
-            localStorage.setItem("products", JSON.stringify(items));
+            document.querySelector(".alertbox span").innerHTML = "Exist in Basket";
+            document.querySelector(".alertbox").style.right = "5%";
+            document.querySelector('.alertbox').style.backgroundColor = 'black'
+          
         }
+        localStorage.setItem("products", JSON.stringify(items));
+        setTimeout(() => {
+            document.querySelector(".alertbox").style.right = "-25%";
+        }, 1500);
+
 
         getCount();
 
-        document.querySelector(".alertbox span").innerHTML = "Added in Basket";
-        document.querySelector(".alertbox").style.right = "5%";
 
-        setTimeout(() => {
-            document.querySelector(".alertbox").style.right = "-35%";
-        }, 1500);
     };
 }
 

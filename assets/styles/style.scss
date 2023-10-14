@@ -18,7 +18,7 @@ header a{
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
 
 
     ::selection {
@@ -1048,6 +1048,7 @@ body {
             width: 50%;
 
             img {
+                cursor: pointer;
                 width: 100%;
 
                 object-fit: contain;

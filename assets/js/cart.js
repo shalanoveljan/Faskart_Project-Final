@@ -1,6 +1,7 @@
 var items = JSON.parse(localStorage.getItem('products'));
 
 function getProducts() {
+    console.log("items",items);
     if (items.length > 0) {
         document.querySelector('.shop-basket').classList.remove('d-none')
         document.querySelector('.alert').classList.add('d-none')

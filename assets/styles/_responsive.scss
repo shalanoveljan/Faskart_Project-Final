@@ -18,10 +18,19 @@
         z-index: 5487;
     }
 
-    {
-        overflow-x: hidden;
-        
+    body{
+        overflow-x: hidden !important;
     }
+
+    .alertbox{
+
+        overflow-x: hidden !important;
+    }
+
+  .quantity{
+    display: flex;
+  }
+
 
 
     .modal {
@@ -52,6 +61,10 @@
 
     #First{
         height: 30vh !important;  
+
+        h1{
+            font-size: 20px !important;
+        }
         
        
     }
@@ -120,7 +133,13 @@
     .slick-prev{
         z-index: 2;
         left: 50vh;
+        padding-right: 15px;
     }
+
+    .add-button{
+        right: 6px !important;
+    }
+    
 
     #category-section-13 .all-delivers .deliver1{
         background-image: none !important;
@@ -213,7 +232,42 @@
    }
 
 
-   
+//    #category-section-5{
+
+
+//     .slider-bank{
+//         overflow-x: hidden;
+//         display: flex;
+//         flex-direction: column;
+//         //gap: 20px;
+//         img{
+//           //  width: 200px;
+//         }
+//     }
+
+
+//    }
+
+   .sub-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+ 
+
+
+   .responsive-nav{
+    height: 100vh;
+    background-color: white;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 48847594852;
+    overflow-y: scroll;
+   }
+
+
 
 
 

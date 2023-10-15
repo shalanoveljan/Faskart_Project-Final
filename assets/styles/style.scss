@@ -17,8 +17,8 @@ header a{
     color: #2a2c2e;
 }
 
-body {
-    overflow: hidden;
+body{
+   overflow-x: hidden;
 
 
     ::selection {
@@ -1203,8 +1203,9 @@ body {
         padding: 5px 15px;
         position: absolute;
         bottom: 20px;
-        right: -25%;
+        right: -35%;
         transition: .7s;
+        overflow: hidden;
     }
 
     #category-section-3 {

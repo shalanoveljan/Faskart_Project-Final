@@ -201,3 +201,59 @@ function Scroll() {
 }
 
 
+
+//https://restcountries.com/v3.1/region/europe
+
+const cities=[];
+
+function GetCities() {
+  fetch('https://restcountries.com/v3.1/region/europe?limit=10')
+  .then(response => response.json())
+  .then(data =>{
+      console.log(data);
+      data.forEach(city => {
+          cities.push(city);
+          document.querySelector('.all-cities').innerHTML += getData(city)
+      })
+  })
+  .catch(error => console.log(error)) 
+  
+}
+GetCities(); 
+
+
+function getData(city) {
+  return `
+  <li>
+  <h6>${city.capital[0]}</h6> <span>population:${city.population}</span>
+</li>
+  `
+}
+
+let search=document.querySelector('.input-modal');
+search.onkeyup = function () {
+    let value = this.value.toLowerCase(); // Arama terimini küçük harfe dönüştürün
+
+    if (!value) {
+        // Eğer arama terimi boşsa, tüm şehirleri göster
+        document.querySelector('.all-cities').innerHTML = cities.map(city => getData(city));
+        return;
+    }
+
+    searchfiltered = cities.filter(city => city.capital[0].toLowerCase().includes(value));
+
+    document.querySelector('.all-cities').innerHTML = '';
+
+    searchfiltered.forEach(city => {
+        document.querySelector('.all-cities').innerHTML += getData(city);
+    });
+}
+
+
+
+let menubar=document.querySelector('#menu-bar');
+let newmenu=document.querySelector('.responsive-nav')
+
+menubar.onclick=function(){
+newmenu.classList.toggle('d-none')
+}

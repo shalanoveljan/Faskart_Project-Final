@@ -17,10 +17,10 @@ function getProducts() {
                 </td>
                 <td>${item.Title}</td>
                 <td>${item.Price} ₼</td>
-                <td>
-                <i class="fa-solid fa-minus" onclick="Minus(this)"></i>
+                <td class="quantity">
+                <i id="minus"    class="fa-solid fa-minus" onclick="Minus(this)"></i>
                 <span>${item.Count}</span>
-                <i class="fa-solid fa-plus" onclick="Plus(this)"></i>
+                <i id="plus" class="fa-solid fa-plus" onclick="Plus(this)"></i>
                 </td>
                 <td class="prodprice">${((item.Price) * (item.Count)).toFixed(2)} ₼</td>
                 <td>

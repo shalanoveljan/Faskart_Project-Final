@@ -1,4 +1,7 @@
 @media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .header-middle {
     display: none;
   }
@@ -9,8 +12,14 @@
     display: flex !important;
     z-index: 5487;
   }
-  main {
-    overflow-x: hidden;
+  body {
+    overflow-x: hidden !important;
+  }
+  .alertbox {
+    overflow-x: hidden !important;
+  }
+  .quantity {
+    display: flex;
   }
   .modal {
     z-index: 564343343;
@@ -34,6 +43,9 @@
   }
   #First {
     height: 30vh !important;
+  }
+  #First h1 {
+    font-size: 20px !important;
   }
   .slick-prev {
     left: 80% !important;
@@ -79,6 +91,10 @@
   .slick-prev {
     z-index: 2;
     left: 50vh;
+    padding-right: 15px;
+  }
+  .add-button {
+    right: 6px !important;
   }
   #category-section-13 .all-delivers .deliver1 {
     background-image: none !important;
@@ -141,6 +157,20 @@
   }
   .payment-option h4 {
     text-align: center;
+  }
+  .sub-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .responsive-nav {
+    height: 100vh;
+    background-color: white;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 48847594852;
+    overflow-y: scroll;
   }
 }
 .modal .modal-dialog .modal-content {
@@ -2165,13 +2195,12 @@ table tr {
 }
 table i {
   cursor: pointer;
-  margin: 0 0 0 5px;
   padding: 8px;
   border-radius: 50%;
   border: 1px solid #cecece;
 }
 table span {
-  margin-left: 8px;
+  padding: 0 8px;
 }
 
 #cart {
@@ -3050,8 +3079,9 @@ body .alertbox {
   padding: 5px 15px;
   position: absolute;
   bottom: 20px;
-  right: -25%;
+  right: -35%;
   transition: 0.7s;
+  overflow: hidden;
 }
 body #category-section-3 {
   padding: 30px 0;

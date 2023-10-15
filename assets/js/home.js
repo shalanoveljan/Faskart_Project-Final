@@ -484,22 +484,20 @@ for (let btn of buttons) {
                 Count: 1,
             });
             localStorage.setItem("products", JSON.stringify(items));
-            document.querySelector(".alertbox span").innerHTML = "Added in Basket";
-            document.querySelector(".alertbox").style.right = "5%";
         } else {
             existProd.Count += 1;
-            document.querySelector(".alertbox span").innerHTML = "Exist in Basket";
-            document.querySelector(".alertbox").style.right = "5%";
-            document.querySelector('.alertbox').style.backgroundColor = 'black'
-          
         }
+
         localStorage.setItem("products", JSON.stringify(items));
-        setTimeout(() => {
-            document.querySelector(".alertbox").style.right = "-25%";
-        }, 1500);
+        // document.querySelector(".alertbox span").innerHTML = (existProd === undefined) ? "Added in Basket" : "Exist in Basket";
+        // document.querySelector(".alertbox").style.right = "25%";
+        // document.querySelector('.alertbox').style.backgroundColor = (existProd === undefined) ? 'green' : 'red';
+        // setTimeout(() => {
+        //     document.querySelector(".alertbox").style.right = "-35%";
+        // }, 2500);
 
 
-        getCount();
+        getCount(); 
 
 
     };

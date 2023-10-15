@@ -172,6 +172,107 @@
     z-index: 48847594852;
     overflow-y: scroll;
   }
+  .responsive-nav #resulist #homelist {
+    width: 100%;
+  }
+  .responsive-nav #resulist #homelist button {
+    color: #4a5568 !important;
+    font-weight: 700 !important;
+  }
+  .responsive-nav #resulist #homelist ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .responsive-nav #resulist #homelist ul li {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .responsive-nav #resulist #homelist ul li:hover a {
+    color: #239698 !important;
+    font-weight: 600 !important;
+  }
+  .responsive-nav #resulist #homelist ul li img {
+    width: 90%;
+  }
+  .responsive-nav #resulist #homelist ul li a {
+    margin-top: 5px;
+    font-size: calc(14px + 2 * (100vw - 1200px) / 720);
+    color: #4a5568 !important;
+  }
+  .responsive-nav #resulist #shoplist button {
+    color: #4a5568 !important;
+    font-weight: 700 !important;
+  }
+  .responsive-nav #resulist #shoplist ul {
+    margin-left: 20px;
+  }
+  .responsive-nav #resulist #shoplist ul li a {
+    color: #4a5568 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+  .responsive-nav #resulist #productlist button {
+    color: #4a5568 !important;
+    font-weight: 700 !important;
+  }
+  .responsive-nav #resulist #productlist ul {
+    margin-left: 20px;
+  }
+  .responsive-nav #resulist #productlist ul li a {
+    color: #4a5568 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+  .responsive-nav #resulist #megamenulist button {
+    color: #4a5568 !important;
+    font-weight: 700 !important;
+  }
+  .responsive-nav #resulist #megamenulist ul .megamenu-drop h5 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #239698 !important;
+  }
+  .responsive-nav #resulist #megamenulist ul .megamenu-drop a {
+    color: #4a5568 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-left: 20px;
+  }
+  .responsive-nav #resulist #bloglist button {
+    color: #4a5568 !important;
+    font-weight: 700 !important;
+  }
+  .responsive-nav #resulist #bloglist ul li {
+    margin-left: 20px;
+  }
+  .responsive-nav #resulist #bloglist ul li a {
+    color: #4a5568 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+  .responsive-nav #resulist #pagelist button {
+    color: #4a5568 !important;
+    font-weight: 700 !important;
+  }
+  .responsive-nav #resulist #pagelist ul li a {
+    color: #4a5568 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+  .responsive-nav #resulist #sellerlist button {
+    color: #4a5568 !important;
+    font-weight: 700 !important;
+  }
+  .responsive-nav #resulist #sellerlist ul li a {
+    color: #4a5568 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
 }
 .modal .modal-dialog .modal-content {
   width: 100%;

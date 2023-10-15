@@ -255,9 +255,7 @@
    }
 
  
-
-
-   .responsive-nav{
+   .responsive-nav {
     height: 100vh;
     background-color: white;
     font-size: 18px;
@@ -265,7 +263,167 @@
     top: 0;
     z-index: 48847594852;
     overflow-y: scroll;
-   }
+
+    #resulist {
+
+        #homelist {
+            button {
+                color: #4a5568 !important;
+                font-weight: 700 !important;
+            }
+
+            width: 100%;
+
+
+            ul {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                li {
+                    width: 47%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        a {
+                            color: #239698 !important;
+                            font-weight: 600 !important;
+                        }
+                    }
+
+                    img {
+                        width: 90%
+                    }
+
+                    a {
+                        margin-top: 5px;
+                        font-size: calc(14px + (16 - 14) * ((100vw - 1200px) / (1920 - 1200)));
+                        color: #4a5568 !important;
+
+                    }
+                }
+            }
+
+
+
+        }
+
+        #shoplist {
+            button {
+                color: #4a5568 !important;
+                font-weight: 700 !important;
+            }
+
+
+            ul {
+                margin-left: 20px;
+
+                li {
+                    a {
+                        color: #4a5568 !important;
+                        font-size: 14px !important;
+                        font-weight: 500 !important;
+                    }
+                }
+            }
+        }
+
+        #productlist {
+            button {
+                color: #4a5568 !important;
+                font-weight: 700 !important;
+            }
+            ul{
+                margin-left: 20px;
+                li{
+                    a{
+                        color: #4a5568 !important;
+                        font-size: 14px !important;
+                        font-weight: 500 !important;
+                    }
+                }
+            }
+
+        }
+        #megamenulist{
+            button {
+                color: #4a5568 !important;
+                font-weight: 700 !important;
+            }
+            ul{
+                .megamenu-drop{
+                    h5{
+                        font-size: 16px !important;
+                        font-weight: 600 !important;
+                        color: #239698 !important;
+                    }
+                    
+                        
+                            a{
+                                color: #4a5568 !important;
+                        font-size: 14px !important;
+                        font-weight: 500 !important;
+                        margin-left: 20px;
+                            }
+                        
+                    
+                }
+            }
+        }
+        #bloglist{
+            button {
+                color: #4a5568 !important;
+                font-weight: 700 !important;
+            }
+            ul{
+                li{
+                    margin-left: 20px;
+                    a{
+                        color: #4a5568 !important;
+                        font-size: 14px !important;
+                        font-weight: 500 !important;
+                    }
+                }
+            }
+        }
+        #pagelist{
+            button {
+                color: #4a5568 !important;
+                font-weight: 700 !important;
+            }
+            ul{
+                li{
+                    a{
+                        color: #4a5568 !important;
+                        font-size: 14px !important;
+                        font-weight: 500 !important;
+                    }
+                }
+            }
+        }
+        #sellerlist{
+            button {
+                color: #4a5568 !important;
+                font-weight: 700 !important;
+            }
+            ul{
+                li{
+                    a{
+                        color: #4a5568 !important;
+                        font-size: 14px !important;
+                        font-weight: 500 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ 
 
 
 

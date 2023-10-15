@@ -404,24 +404,37 @@
 
     <!-- Responsive Menu Start-->
 
-    <div class="responsive-nav flex-shrink-0 p-3 d-none" style="width: 720px;">
+    <div class="responsive-nav flex-shrink-0 p-3 d-none">
         
-        <ul class="list-unstyled ps-0">
-          <li class="mb-1">
+        <ul class="list-unstyled ps-0" id="resulist">
+          <li class="mb-1" id="homelist">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-              Home
+              Home 
             </button>
-            <div class="collapse" id="home-collapse" style="">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Kartshop</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sweetshop</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Organic</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Supershop</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Slicktech</a></li>
+            <div class="collapse" id="home-collapse"  id="c">
+              <ul class="homeul">
+                <li>
+                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/1.jpg" alt="">
+                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Kartshop</a></li>
+                <li>
+                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/2.jpg" alt="">
+                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sweetshop</a></li>
+                <li>
+                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/3.jpg" alt="">
+                    
+                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Organic</a></li>
+                <li>
+                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/4.jpg" alt="">
+                    
+                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Supershop</a></li>
+                <li>
+                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/theme/5.jpg" alt="">
+
+                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Slicktech</a></li>
               </ul>
             </div>
           </li>
-          <li class="mb-1">
+          <li class="mb-1" id="shoplist">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
               Shop
             </button>
@@ -437,16 +450,16 @@
               </ul>
             </div>
           </li>
-          <li class="mb-1">
+          <li class="mb-1" id="productlist">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
               Product
             </button>
             <div class="collapse" id="orders-collapse" style="">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Product 4 Image</a></li>
-                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Product Thumbnail</a>
+                <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded" data-bs-toggle="collapse" data-bs-target="#thumbnail-collapse" aria-expanded="false">Product Thumbnail</a>
                 
-                    <div class="menu-drop1">
+                    <div class="menu-drop1 collapse ms-3" id="thumbnail-collapse">
                         <p class="first">Left Thumbnail</p>
                         <p class="nested-drop-1">Right Thumbnail</p>
                         <p>Bottom Thumbnail</p>
@@ -461,7 +474,7 @@
               </ul>
             </div>
           </li>
-          <li class="mb-1">
+          <li class="mb-1" id="megamenulist">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
               Mega Menu
             </button>
@@ -541,7 +554,7 @@
             </div>
           </li>
 
-          <li class="mb-1">
+          <li class="mb-1" id="bloglist">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#blog-collapse" aria-expanded="false">
               Blog
             </button>
@@ -554,15 +567,15 @@
             </div>
           </li>
 
-          <li class="mb-1">
+          <li class="mb-1" id="pagelist">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#page-collapse" aria-expanded="false">
              Pages
             </button>
             <div class="collapse page-collapse" id="page-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Email Tamplate</a></li>
-                <li><a href="" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Invoice Template</a>
-                    <div class="page-nested1">
+                <li><a href="" class="link-body-emphasis d-inline-flex text-decoration-none rounded" data-bs-toggle="collapse" data-bs-target="#invoice-collapse" aria-expanded="false">Invoice Template</a>
+                    <div class="page-nested1 collapse" id="invoice-collapse">
                         <p class="first">Invoice 1</p>
                         <p>Invoice 2</p>
                         <p>Invoice 3</p>
@@ -584,7 +597,7 @@
             </div>
           </li>
           
-          <li class="mb-1">
+          <li class="mb-1" id="sellerlist">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#seller-collapse" aria-expanded="false">
               Seller
             </button>
@@ -603,7 +616,6 @@
 
         </ul>
       </div>
-
 
     <!-- Responsive Menu End-->
 
